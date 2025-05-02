@@ -1,8 +1,7 @@
 # FinScope – Budget Tracker App
 
 ## 📽️ YouTube Demo Video
-
-\[Insert Your Video Link Here]
+https://youtu.be/yxUB6ulSfUM
 
 ## 💻 GitHub Repository
 
