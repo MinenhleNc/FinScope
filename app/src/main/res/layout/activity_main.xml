@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fillViewport="true"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="24dp">
+
+        <!-- 👋 Welcome Message -->
+        <TextView
+            android:id="@+id/textWelcome"
+            android:layout_width="194dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="20dp"
+            android:text="Welcome, Minnie"
+            android:textColor="@color/pink_500"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- 💳 Summary Card -->
+        <LinearLayout
+            android:id="@+id/cardSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="8dp"
+            android:padding="20dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/pink_200"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="4dp"
+            android:background="@drawable/card_background">
+
+            <TextView
+                android:id="@+id/textCardTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This Month"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/textMonthlySpend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💸 Total Spent: R0.00"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/textMonthlyGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🎯 Budget Goal: R0.00"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 🚀 Horizontal Button Group -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!-- ➕ Add Expense Button -->
+            <Button
+                android:id="@+id/buttonAddExpense"
+                style="@style/PinkRoundedButton"
+                android:layout_width="0dp"
+                android:layout_height="86dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="➕ Add" />
+
+            <!-- 📂 Add Category Button -->
+
+            <!-- 📊 View Entries Button -->
+            <Button
+                android:id="@+id/buttonAddCategory"
+                style="@style/PinkRoundedButton"
+                android:layout_width="0dp"
+                android:layout_height="86dp"
+                android:layout_marginHorizontal="4dp"
+                android:layout_weight="1"
+                android:text="📂 Category" />
+
+            <Button
+                android:id="@+id/buttonViewExpenses"
+                style="@style/PinkRoundedButton"
+                android:layout_width="0dp"
+                android:layout_height="86dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="📊 View" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
